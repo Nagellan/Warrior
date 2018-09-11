@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+     <head>
+          <meta charset="utf-8">
+          <meta http-equiv="Content-Type" content="text/html">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+          <link rel="icon" href="img/icon.png">
+          <title>Сила - спортивный клуб</title>
+          <link rel="stylesheet" href="css/style.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script>
+               $(document).ready(function(){
+                    $("#hide").click(function(){
+                         $(".hided").css("position", "relative");
+                         $(".hided").css("background-color", "rgb(24,24,24)");
+                         $(".hided").css("z-index", "3");
+                         $("#hide").hide();
+                    });
+                    $("#show").click(function(){
+                         $(".shown").show();
+                         $(".hide").hide();
+                    });
+               });
+          </script>
+
+          <script type="text/javascript">
+               $(function(){
+                    $('a[href^="#"]').click(function(){
+                         var target = $(this).attr('href');
+                         $('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+                         return false;
+                    });
+               });
+          </script>
+     </head>
+
+     <body>
+          <nav>
+               <div class="container">
+                    <a href="#Main" class="logo"><img src="img/logo.png" /></a>
+                    <img src="img/menu.png" class="menu" tabindex="1">
+                    <div class="small-menu">
+                         <a href="#Benefits">Преимущества</a>
+                         <a href="#Team">Команда</a>
+                         <a href="#Gallery">Галерея</a>
+                         <a href="#Feedback">Отзывы</a>
+                         <a href="#SignUp">Записаться</a>
+                         <a href="#Contacts">Контакты</a>
+                    </div>
+               </div>
+          </nav>
+
+          <header id="Main">
+               <div class="dark">
+                    <div class="container">
+                         <H1>Начни<br>путь воина<br>сейчас!</H1>
+                         <H4>Программа тренировок <b>тайского бокса</b>, <b>ММА</b> и <b>кроссфита</b> в Уфе</H4>
+                         <a class="button" href="#Benefits">Узнать больше</a>
+                    </div>
+               </div>
+          </header>
+
+          <section id="Benefits" class="benefits">
+               <div class="container">
+                    <H2>Почему именно у нас?</H2>
+
+                    <div class="benefit">
+                         <div class="inside">
+                              <div class="icon icon-1"></div>
+                              <H3>Индивидуальный подход</H3>
+                              <ul>
+                                   <li>Занятия с "нуля"</li>
+                                   <li>Занятия с детьми от 5 лет</li>
+                                   <li>Занятия с взрослыми любого возраста</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="benefit">
+                         <div class="inside">
+                              <div class="icon icon-2"></div>
+                              <H3>Выгодно</H3>
+                              <ul>
+                                   <li>Пробное занятие бесплатно</li>
+                                   <li>Занятия от 2000 рублей в месяц</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="benefit">
+                         <div class="inside">
+                              <div class="icon icon-3"></div>
+                              <H3>Участие в соревнованиях</H3>
+                              <ul>
+                                   <li>Соревнования являются неотъемлемой частью тренировки</li>
+                                   <li>Участие в соревнованиях, проходящих в республике и за её пределами</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <p class="description">
+                         Программа тренировок включает в себя изучение техники тайского бокса, повышение физической выносливости, силы,
+                         ловкости, координации. Кроме того, тренировки по тайскому боксу прививают детям дисциплину, стремление быть победителем
+                         и уверенность в себе. Спортсмены, прошедшие курс из 35 тренировок, могут пройти аттестацию на Кхан и получить
+                         соответствующий пратьят и сертификат о прохождении аттестации.
+                        <br><br>
+                        <b>Помимо этого наш клуб проводит занятия по кроссфиту и ММА.</b>
+                    </p>
+
+                    <div class="clearfix"></div>
+
+               </div>
+          </section>
+
+          <section id="Team" class="team">
+               <div class="container">
+                    <H2>Наша команда</H2>
+                    <div class="trainer trainer-1">
+                         <div class="bg-move bg-move-1">
+                              <H3>Тимур Рустемович</H3>
+                              <span>Направление: Тайский бокс</span>
+                              <p>
+                                   Мастер спорта России по Тайскому боксу Чемпион мира по Кикбоксингу (раздел K-1) Призёр и победитель первенств
+                                   России по тайскому боксу и кикбоксингу Многократный чемпион и призёр Урало-Приволжской зоны России по тайскому
+                                   боксу и кикбоксингу Чемпион и призер областных и республиканских соревнований по тайскому боксу и кикбоксингу.
+                                   Судья первой категории по тайскому боксу. Тренерский стаж с 2009 года
+                              </p>
+                              <ul class="socials">
+                                   <a href="https://vk.com/id22140260"><li class ="vk"></li></a>
+                                   <a href="#"><li class ="inst"></li></a>
+                                   <a href="#"><li class ="twit"></li></a>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="trainer trainer-2">
+                         <div class="bg-move bg-move-2">
+                              <H3>Роберт Равкатович</H3>
+                              <span>Направление: Тайский бокс</span>
+                              <p>
+                                   Кандидат в мастера спорта России по тайскому боксу. Судья первой категории по тайскому боксу. Победитель
+                                   Первенства России по тайскому боксу. Двукратный Обладатель Кубка России по кикбоксингу. Серебряный Призер
+                                   первенства России по тайскому боксу. Двукратный Серебряный призер Кубка России по кикбоксингу. Бронзовый
+                                   призер Первенства России по тайскому боксу. Многократный победитель всероссийских и межрегиональных
+                                   соревнований по тайскому боксу и кикбоксингу. Лауреат Республиканской премии «Золотой пояс Башкортостана»
+                                   в номинации «Мастер боевых искусств Республики Башкортостан»
+                              </p>
+                              <ul class="socials">
+                                   <a href="https://vk.com/robert_k"><li class ="vk"></li></a>
+                                   <a href="#"><li class ="inst"></li></a>
+                                   <a href="#"><li class ="twit"></li></a>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="trainer trainer-3">
+                         <div class="bg-move bg-move-3">
+                              <H3>Махмад Киемидинович</H3>
+                              <span>Направление: Смешанные единоборства, самооборона, кроссфит</span>
+                              <p>
+                                   Черный пояс 1 дан по тхэквондо Серебряный призер чемпионата Мира по тхэквондо гтф, Казань 2016г Чемпион
+                                   России по вьет во дао 2015г Чемпион РБ по сават, многократный Чемпион РБ по кикбоксингу Многократный
+                                   Абсолютный Чемпион РБ по тхэквондо Чемпион РБ по кудо Награжден почетным званием «Мастер боевых искусств»
+                              </p>
+                              <ul class="socials">
+                                   <a href="https://vk.com/id264685616"><li class ="vk"></li></a>
+                                   <a href="#"><li class ="inst"></li></a>
+                                   <a href="#"><li class ="twit"></li></a>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section id="Gallery" class="gallery">
+               <input checked type=radio name=respond id=desktop />
+          	<input type=radio name=respond id=tablet />
+          	<input type=radio name=respond id=mobile />
+
+          	<article id=slider>
+          		<input checked type=radio name=slider id=slide1 />
+          		<input type=radio name=slider id=slide2 />
+          		<input type=radio name=slider id=slide3 />
+          		<input type=radio name=slider id=slide4 />
+          		<input type=radio name=slider id=slide5 />
+          		<input type=radio name=slider id=slide6 />
+                    <input type=radio name=slider id=slide7 />
+                    <input type=radio name=slider id=slide8 />
+
+          		<div id=slides>
+          			<div id=overflow>
+          				<div class=inner>
+          					<article>
+          						<div class=info><h3>Вход в зал</h3>наша фирменная вывеска</div>
+          						<img src="img/slide1.jpg" />
+          					</article>
+
+
+          					<article>
+          						<div class=info><h3>Ринг</h3>здесь проходят тренировочные бои</div>
+          						<img src="img/slide2.jpg" />
+          					</article>
+
+          					<article>
+          						<div class=info><h3>Угол ринга</h3>...и красные перчатки</div>
+          						<img src="img/slide3.jpg" />
+          					</article>
+
+          					<article>
+          						<div class=info><h3>Площадка для занятий</h3>мягкий материал пола не позволит вам получить травму</div>
+          						<img src="img/slide4.jpg" />
+          					</article>
+
+          					<article>
+          						<div class=info><h3>Детский</h3>учебно-тренировочный процесс</div>
+          						<img src="img/slide5.jpg" />
+          					</article>
+
+          					<article>
+          						<div class=info><h3>Процесс тренировок</h3>отработка удара ногой</div>
+          						<img src="img/slide6.jpg" />
+          					</article>
+
+                                   <article>
+          						<div class=info><h3>Наши юные чемпионы</h3>и их тренер Роберт</div>
+          						<img src="img/slide7.jpg" />
+          					</article>
+
+                                   <article>
+          						<div class=info><h3>Становитесь</h3>одними из нас!</div>
+          						<img src="img/slide8.jpg" />
+          					</article>
+          				</div>
+          			</div>
+          		</div>
+
+          		<div id=controls>
+          			<label for=slide1></label>
+          			<label for=slide2></label>
+          			<label for=slide3></label>
+          			<label for=slide4></label>
+          			<label for=slide5></label>
+          			<label for=slide6></label>
+                         <label for=slide7></label>
+                         <label for=slide8></label>
+          		</div>
+
+          		<div id=active>
+          			<label for=slide1></label>
+          			<label for=slide2></label>
+          			<label for=slide3></label>
+          			<label for=slide4></label>
+          			<label for=slide5></label>
+          			<label for=slide6></label>
+                         <label for=slide7></label>
+                         <label for=slide8></label>
+          		</div>
+          	</article>
+          </section>
+          
+          <section id="Feedback">
+              <div class="container">
+                    <H2>Отзывы</H2>
+
+                    <div class="opinion">
+                         <div class="inside">
+                              <div class="icon icon-1"></div>
+                              <H3>Тимур</H3>
+                              <p>
+                                  Очень хорошие тренеры. Мне очень нравится здесь заниматься. Тренер очень отзывчивый, если что-то не получается, всегда поможет. Расслабляться тоже не дает. Тут делают настоящих мужчин!
+                              </p>
+                         </div>
+                    </div>
+
+                    <div class="opinion">
+                         <div class="inside">
+                              <div class="icon icon-2"></div>
+                              <H3>Евгений</H3>
+                              <p>
+                                  Привел сына на занятия, теперь ходит, не пропускает. Все хорошо, рядом с домом.
+                              </p>
+                         </div>
+                    </div>
+
+                    <div class="opinion">
+                         <div class="inside">
+                              <div class="icon icon-3"></div>
+                              <H3>Ксения</H3>
+                              <p>
+                                  Хотела бы сказать спасибо тренеру Роберту Кадырову. НАШ ТРЕНЕР - "ЗВЕРЬ". Очень интересные и интенсивные тренировки! Девчонки, приходите - не пожалеете!
+                              </p>
+                         </div>
+                    </div>
+                    <div class="clearfix"></div>
+               </div>
+          </section>
+
+          <section id="SignUp" class="sign-up hided">
+               <div class="container">
+                    <div class="window">
+                         <div class="picture"><img id="hide" class="cancel" src="img/cancel.png"></div>
+                         <div class="form">
+                             <div class="inside">
+                                  <h2 class="hide">Запишись<br>на пробное<br>занятие!</h2>
+                                  <div class="thanks shown">
+                                      <h2>Заявка отправлена. Спасибо!</h2>
+                                  </div>
+                                  
+                                  <form action="mail.php" method="POST">
+                                       <input type="text" name="name" placeholder="Имя" required>
+                                       <br>
+                                       <input type="tel" name="phone" placeholder="Номер телефона" required>
+                                       <button id="show" type="submit">➜</button>
+                                  </form>
+                              </div>
+                              
+                         </div>
+                         <div class="clearfix"></div>
+                    </div>
+               </div>
+          </section>
+
+          <section id="Contacts" class="contacts">
+               <div class="container">
+                    <H2>Контакты</H2>
+                    <div class="content">
+                         <div class="socials">
+                              <a href="http://vk.com/silaufa">
+                                   <div class="block vk-group">
+                                        <div class="logo"></div>
+                                   </div>
+                              </a>
+
+                              <a href="https://www.instagram.com/sila.ufa/">
+                                   <div class="block inst-group">
+                                        <div class="inside">
+                                             <div class="logo"></div>
+                                        </div>
+                                   </div>
+                              </a>
+                              <div class="clearfix"></div>
+                         </div>
+
+                         <div class="contact">
+                              <span><b>Номера телефонов:</b> 8(927)236-07-14 <br> 266-07-14</span>
+                              <hr>
+                              <p>
+                                   Нас можно найти по адресу: Россия, Республика Башкортостан, Уфа, Набережная реки Уфы, 23.
+                              </p>
+                         </div>
+                         <div class="clearfix"></div>
+                    </div>
+               </div>
+               <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3964a51f5686e6ea83172a226c75567a133c7ff433aa47d2c4da20e05f2d8804&amp;source=constructor" width="100%" frameborder="0"></iframe>
+          </section>
+
+          <footer>
+               <div class="container">
+                    <a class="button" href="#SignUp">Записаться ➜</a>
+                    <div class="table">
+                         <div class="benefit">
+                              <div class="inside">
+                                   <H3>Навигация</H3>
+                                   <ul>
+                                        <li><a href="#Main">Главная</a></li>
+                                        <li><a href="#Benefits">Преимущества</a></li>
+                                        <li><a href="#Team">Команда</a></li>
+                                        <li><a href="#Gallery">Галерея</a></li>
+                                        <li><a href="#SignUp">Записаться</a></li>
+                                        <li><a href="#Contacts">Контакты</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+
+                         <div class="benefit">
+                              <div class="inside">
+                                   <H3>Связь</H3>
+                                   <ul>
+                                        <li>Адрес: Россия, Республика Башкортостан, Уфа, Набережная реки Уфы, 23</li>
+                                        <li>Телефоны: 8(927)236-07-14 <br> 266-07-14</li>
+                                        <li>Email: silaufa.ru@gmail.com</li>
+                                   </ul>
+                              </div>
+                         </div>
+
+                         <div class="benefit">
+                              <div class="inside">
+                                   <H3>Соцсети</H3>
+                                   <ul>
+                                        <a href="http://vk.com/silaufa"><li>Группа Вконтакте</li></a>
+                                        <a href="https://www.instagram.com/sila.ufa/"><li>Инстаграм</li></a>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="clearfix"></div>
+                    </div>
+                    <hr>
+                    <div class="end">
+                        <img src="img/logo.png" height="35px">
+                        <br>
+                        <a class="link-to-us" href="http://vk.com/ireknazm">Создание сайтов на заказ</a>
+                        <div class="clearfix"></div>
+                    </div>
+               </div>
+          </footer>
+     </body>
+</html>
